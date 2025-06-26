@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Sailor Moon - Cinthia Villalaz</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Fondo mágico con SVG -->
+  <div class="bg-magic">
+    <svg width="100%" height="100%" class="bg-svg">
+      <circle cx="10%" cy="20%" r="40" fill="#ffe4fa" opacity="0.5"/>
+      <circle cx="90%" cy="10%" r="30" fill="#eab5c5" opacity="0.3"/>
+      <circle cx="80%" cy="80%" r="60" fill="#a8e6cf" opacity="0.2"/>
+      <text x="50%" y="95%" text-anchor="middle" font-size="60" fill="#ffe4fa" opacity="0.2">🌙</text>
+    </svg>
+  </div>
+  <!-- Presentación -->
+  <header class="header-hero">
+    <div class="hero-content">
+      <div class="avatar-moon">
+        <span class="logo-estrella-interactiva" tabindex="0">⭐</span>
+      </div>
+      <div class="hero-text">
+        <h1 class="main-title" id="nombre"></h1>
+        <h2 class="subtitle" id="titulo"></h2>
+        <p class="hero-desc" id="descripcion"></p>
+      </div>
+    </div>
+  </header>
+  <!-- Proyectos -->
+  <section id="portfolio" class="portfolio-section">
+    <h2 class="section-title"><span class="star">★</span> Proyectos Destacados <span class="star">★</span></h2>
+    <div class="portfolio-gallery" id="proyectos"></div>
+  </section>
+  <!-- Sobre mí -->
+  <section id="about" class="about-section">
+    <h2 class="section-title"><span class="moon">🌙</span> Sobre mí</h2>
+    <div class="about-content">
+      <span class="logo-estrella-about">⭐</span>
+      <div class="about-bio">
+        <ul class="about-details">
+          <li><i class="fas fa-graduation-cap"></i> <span id="formacion"></span></li>
+          <li><i class="fas fa-code"></i> Habilidades: <span id="habilidades"></span></li>
+          <li><i class="fas fa-magic"></i> Tecnologías: <span id="tecnologias"></span></li>
+          <li><i class="fas fa-heart"></i> Intereses: <span id="intereses"></span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- Contacto -->
+  <section id="contact" class="contact-section">
+    <h2 class="section-title">Contacto <span class="moon">🌙</span></h2>
+    <div class="contact-panel">
+      <form class="contact-form">
+        <input type="text" name="nombre" placeholder="Tu nombre" class="input-blanco" required>
+        <input type="email" name="email" placeholder="Tu correo" class="input-blanco" required>
+        <textarea name="mensaje" placeholder="Tu mensaje" class="input-blanco" required></textarea>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>✨ "Cree en ti y en la magia de tus sueños" ✨<br><span class="moon">🌙</span> Portafolio inspirado en Sailor Moon <span class="moon">🌙</span></p>
+  </footer>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
